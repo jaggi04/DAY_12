@@ -1,153 +1,50 @@
+
+
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Class Feedback Form</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="./SURVEY_FORM_STYLE.css">
-</head>
-<body>
-
-	<header>
-		<h1>Class Feedback form</h1>
-	</header>
-
-	<form action="#" method="post">
-        <fieldset>
-            <legend> Instructor Name</legend>
-            <select name="gender" id="gender" required>
-				<option value="">--Please Select--</option>
-				<option value="leo">Leo</option>
-				<option value="female">Vikram</option>
-				<option value="Mohan">Mohan</option>
-                <option value="Raju">Raju</option>
-			</select>
-
-        </fieldset>
-		<fieldset>
-            
-			<legend>Candidate Info</legend>
-			<label for="name">Name:</label>
-			<input type="text" name="name" id="name" required>
-
-			<label for="date">Date of class:</label>
-			<input type="date" >
-
-			<label for="Batch">Batch:</label>
-			<select name="gender" id="gender" required>
-				<option value="">--Please Select--</option>
-				<option value="B44">B44</option>
-				<option value="B55">B55</option>
-				<option value="B66">B66</option>
-                <option value="B77">B77</option>
-				<option value="B88">B88</option>
-				<option value="B99">B99</option>
-			</select>
-		</fieldset>
-
-		<fieldset>
-			<legend>Rate your class</legend>
-            <select name="answer"  required>
-				<option value="">--Please Select--</option>
-				<option value="1">1</option>
-				<option value="2">2</option>
-				<option value="3">3</option>
-                <option value="4">4</option>
-				<option value="5">5</option>
-			</select>
-           
-
+  <head>
+    <title>Event Update Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Event Update</h1>
+      <form>
+        <label for="Name">Name</label>
+        <input type="text" id="Name" name="Name" required>
         
-		</fieldset>
+        <label for="event-date">Date</label>
+        <input type="date" id="event-date" name="event-date" required>
 
-		<fieldset>
-			<legend>Mentor Rating</legend>
-			<select name="answer"  required>
-				<option value="">--Please Select--</option>
-				<option value="1">1</option>
-				<option value="2">2</option>
-				<option value="3">3</option>
-                <option value="4">4</option>
-				<option value="5">5</option>
-			</select>
-		</fieldset>
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" required>
 
-        <fieldset>
-            <legend> Task Assigned</legend>
-            <select name="answer" required>
-				<option value="">--Please Select--</option>
-				<option value="Assigned">Assigned</option>
-				<option value="Not Assigned">Not Assigned</option>
-				
-			</select>
+        <label for="email">E-Mail ID</label>
+        <input type="email" id="email" name="email" required>
 
-        </fieldset>
-
-    <fieldset>
-        <legend>No.of.Problems completed</legend>
-   
-        <fieldset>
-            <legend> Codekata problems </legend>
-            <select name="answer" required>
-				<option value="">--Please Select the number--</option>
-				<option value="Assigned">1</option>
-				<option value="Not Assigned">2</option>
-                <option value="Assigned">3</option>
-				<option value="Not Assigned">4</option>
-				<option value="Assigned">5</option>
-				<option value="Not Assigned">6</option>
-				<option value="Assigned">7</option>
-				<option value="Not Assigned">8</option>
-				<option value="Assigned">9</option>
-				<option value="Not Assigned">10</option>
-				
-				
-			</select>
-        </fieldset>
+        <label for="attendees">No of Attendees</label>
+        <input type="number" id="attendees" name="attendees" required>
         
-        <fieldset>
-            <legend> Webkata problems </legend>
-            <select name="answer" required>
-				<option value="">--Please Select the number--</option>
-				<option value="Assigned">1</option>
-				<option value="Not Assigned">2</option>
-                <option value="Assigned">3</option>
-				<option value="Not Assigned">4</option>
-				<option value="Assigned">5</option>
-				<option value="Not Assigned">6</option>
-				<option value="Assigned">7</option>
-				<option value="Not Assigned">8</option>
-				<option value="Assigned">9</option>
-				<option value="Not Assigned">10</option>
-				
-			</select>
-        </fieldset>    
-    </fieldset>   
+        <label for="choose_event">Event Details</label>
+            <select> 
+                <option value="">--Please Select--</option>
+                <option value="AR Rahman concert">AR Rahman concert</option>
+                <option value="Ilayaraja concert">Ilayaraja concert</option>
+                <option value="Yuvan shankar raja concert">Yuvan shankar raja concert</option>
+                <option value="Harris jayaraj concert">Harris jayaraj concert</option>
+            </select>
+        <label for="event_query">Reach out for any Queries</label>
+        <textarea id="event_query" name="event_query" rows="5"></textarea>
         
-    <fieldset>
-            <legend>Doubts Cleared</legend>
-                <select name="Answer" required>
-                    <option value="">-----Please select--</option>
-                    <option value="Cleared">Cleared</option>
-                    <option value="Not cleared">Not cleared</option>
-                </select>
-        </fieldset>
-
-    <fieldset>
-        <legend> Task Explained</legend>
-            <select name="option" id="option" required>
-				<option value="">--Please Select--</option>
-				<option value="Assigned">Explained</option>
-				<option value="Not Assigned">Not explained</option>
-    </fieldset>
-
-<div>
-    <label for="feedback">Feedback:</label>
-    <textarea id="feedback" name="feedback" placeholder="Feedback & Suggestions"></textarea>
-     <button type="submit">Submit</button>
- </div>  
-		
-	</form>
-
-</body>
+        <label for="event_reciept">Please upload the payment reciept</label>
+        <input type="file" id="event_reciept" name="event_reciept">
+        
+        <div class="button-group">
+          <input type="submit" value="Submit">
+          <button type="button" onclick="window.location.href='index.html'">Cancel</button>
+        </div>
+      </form>
+    </div>
+  </body>
 </html>
